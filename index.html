@@ -260,10 +260,11 @@
   <script>
     
 
-const EMAILJS_PUBLIC_KEY  = '???';
-const EMAILJS_SERVICE_ID  = '???';
-const EMAILJS_TEMPLATE_ID = '???';
-    emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+const EMAILJS_PUBLIC_KEY  = 'aBcDeFgHiJkLmNo';    // your real key
+const EMAILJS_SERVICE_ID  = 'service_abc123';       // your real service ID
+const EMAILJS_TEMPLATE_ID = 'template_xyz456';      // your real template ID
+
+emailjs.init(EMAILJS_PUBLIC_KEY);   // ← must be this format, NOT { publicKey: ... }
 
     document.getElementById('contactForm').addEventListener('submit', function (e) {
       e.preventDefault();
