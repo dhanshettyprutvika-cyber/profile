@@ -1,322 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prutvika Dhanshetty | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prutvika Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-ring" id="cursorRing"></div>
+<div class="container profile-container">
 
-  <nav id="navbar">
-    <a class="nav-logo" href="#">PD</a>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <div class="profile-header">
 
-  <section id="home">
-    <div class="hero-left">
-      <p class="hero-eyebrow">Portfolio 2026</p>
-      <h1 class="hero-name">
-        <span>PRUTVIKA</span>
-        <span>DHANSHETTY</span>
-      </h1>
-      <div class="hero-type-wrap">
-        <span class="hero-type-label">Currently</span>
-        <span id="typing"></span><span class="cursor-blink"></span>
-      </div>
-      <p class="hero-desc">
-        B.Tech Computer Science student passionate about crafting expressive
-        web experiences, writing clean JavaScript, and solving hard problems.
-      </p>
-      <a href="#projects" class="hero-cta">
-        View My Work
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M5 12h14M12 5l7 7-7 7"/>
-        </svg>
-      </a>
-    </div>
-
-    <div class="hero-right">
-      <div class="hero-orb">
-        <div class="hero-orb-inner"></div>
-        <div class="hero-orb-ring"></div>
-        <div class="hero-orb-ring2"></div>
-        <div class="hero-center-text"><span>CSE · 2028</span></div>
-      </div>
-    </div>
-
-    <div class="scroll-hint">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="about-text reveal">
-      <p class="section-tag">About</p>
-      <h2 class="section-title">Building<br>The Future<br>One Line</h2>
-      <p>I'm <strong>Prutvika</strong>, a Computer Science Engineering student who loves turning ideas into polished digital products. My focus lies in <strong>Frontend Development</strong>, JavaScript, and building things that feel great to use.</p>
-      <p>When I'm not coding, I'm sharpening my problem-solving skills on <strong>DSA challenges</strong> and exploring new web technologies to stay ahead of the curve.</p>
-    </div>
-    <div class="about-facts reveal">
-      <div class="facts-grid">
-        <div class="fact"><div class="fact-num">10+</div><div class="fact-label">Projects</div></div>
-        <div class="fact"><div class="fact-num">5+</div><div class="fact-label">Certificates</div></div>
-        <div class="fact"><div class="fact-num">100+</div><div class="fact-label">DSA Problems</div></div>
-        <div class="fact"><div class="fact-num">2028</div><div class="fact-label">Graduation</div></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="skills">
-    <div class="reveal">
-      <p class="section-tag">Expertise</p>
-      <h2 class="section-title">Skills</h2>
-    </div>
-    <div class="skills-grid reveal">
-      <div class="skill-item">
-        <div class="skill-header"><span class="skill-name">HTML</span><span class="skill-pct">95</span></div>
-        <div class="skill-bar"><div class="skill-fill" data-width="0.95"></div></div>
-      </div>
-      <div class="skill-item">
-        <div class="skill-header"><span class="skill-name">CSS</span><span class="skill-pct">90</span></div>
-        <div class="skill-bar"><div class="skill-fill" data-width="0.90"></div></div>
-      </div>
-      <div class="skill-item">
-        <div class="skill-header"><span class="skill-name">JavaScript</span><span class="skill-pct">85</span></div>
-        <div class="skill-bar"><div class="skill-fill" data-width="0.85"></div></div>
-      </div>
-      <div class="skill-item">
-        <div class="skill-header"><span class="skill-name">Bootstrap</span><span class="skill-pct">88</span></div>
-        <div class="skill-bar"><div class="skill-fill" data-width="0.88"></div></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="reveal">
-      <p class="section-tag">Work</p>
-      <h2 class="section-title">Projects</h2>
-    </div>
-    <div class="projects-grid reveal">
-      <div class="project-card">
-        <span class="project-num">01</span>
-        <p class="project-tag">HTML · CSS · JS</p>
-        <h3 class="project-title">Portfolio<br>Website</h3>
-        <p class="project-desc">Responsive personal portfolio showcasing projects, skills, and experience with clean design.</p>
-        <div class="project-arrow">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        <div class="avatar">
+            PD
         </div>
-      </div>
-      <div class="project-card">
-        <span class="project-num">02</span>
-        <p class="project-tag">JavaScript</p>
-        <h3 class="project-title">To-Do<br>List App</h3>
-        <p class="project-desc">Feature-rich task manager with local storage, drag-and-drop, and priority sorting.</p>
-        <div class="project-arrow">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
-        </div>
-      </div>
-      <div class="project-card">
-        <span class="project-num">03</span>
-        <p class="project-tag">API · JavaScript</p>
-        <h3 class="project-title">Weather<br>App</h3>
-        <p class="project-desc">Real-time weather forecasting application powered by OpenWeather API with geo-location.</p>
-        <div class="project-arrow">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
-        </div>
-      </div>
+
+        <h1>Prutvika Dhanshetty</h1>
+
+        <p>Computer Science Student | Web Developer | Tech Enthusiast</p>
+
     </div>
-  </section>
 
-  <section id="contact">
-    <div class="reveal">
-      <p class="section-tag">Get In Touch</p>
-      <h2 class="section-title">Contact</h2>
-    </div>
-    <div class="contact-layout reveal">
-      <div class="contact-info">
-        <p>Have a project in mind or just want to connect? I'd love to hear from you. Fill out the form and I'll get back to you soon.</p>
-        <div class="contact-detail">
-          <div class="contact-detail-icon">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 5H3l9 7 9-7zM3 5v14h18V5"/></svg>
-          </div>
-          <span>dhanshettyprutvika@gmail.com</span>
+    <section>
+        <h2 class="section-title">About Me</h2>
+
+        <div class="info-box">
+            <p>
+                Hello! I am Prutvika Dhanshetty, a Computer Science student
+                passionate about technology, web development, and software
+                engineering. I enjoy creating responsive websites and learning
+                modern technologies. My goal is to become a successful software
+                developer and contribute to innovative projects.
+            </p>
         </div>
-        <div class="contact-detail">
-          <div class="contact-detail-icon">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/></svg>
-          </div>
-          <span>github.com/dhanshettyprutvika</span>
+    </section>
+
+    <section>
+        <h2 class="section-title">Education</h2>
+
+        <div class="info-box">
+            <h5>Bachelor of Computer Science</h5>
+            <p>
+                Currently pursuing my degree with interests in Web Development,
+                Database Management Systems, Programming, and Software Engineering.
+            </p>
         </div>
-      </div>
+    </section>
 
-      <form class="contact-form" id="contactForm">
-        <div class="form-field">
-          <input type="text" id="from_name" name="from_name" placeholder="Your Name" required>
+    <section>
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skill">
+            <div class="skill-name">HTML</div>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width:95%"></div>
+            </div>
         </div>
-        <div class="form-field">
-          <input type="email" id="from_email" name="from_email" placeholder="Your Email" required>
+
+        <div class="skill">
+            <div class="skill-name">CSS</div>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width:90%"></div>
+            </div>
         </div>
-        <div class="form-field">
-          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+        <div class="skill">
+            <div class="skill-name">Bootstrap</div>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width:85%"></div>
+            </div>
         </div>
-        <button class="btn-send" type="submit" id="sendBtn">
-          <span id="btnText">Send Message</span>
-          <svg id="btnArrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
-          </svg>
-          <span id="btnSpinner" style="display:none">Sending…</span>
-        </button>
-        <p id="formStatus" style="display:none; margin-top:1rem; font-size:0.85rem; letter-spacing:1px;"></p>
-      </form>
-    </div>
-  </section>
 
-  <footer>
-    <span class="footer-logo">PD</span>
-    <span>© 2026 Prutvika Dhanshetty</span>
-    <div class="footer-links">
-      <a href="#home">Home</a>
-      <a href="#projects">Work</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </footer>
+        <div class="skill">
+            <div class="skill-name">Java</div>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width:75%"></div>
+            </div>
+        </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <div class="skill">
+            <div class="skill-name">DBMS</div>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width:80%"></div>
+            </div>
+        </div>
+    </section>
 
-  <script>
-    // =====================================================
-    // STEP 1: Replace these 3 values with your real EmailJS credentials
-    // Go to https://www.emailjs.com and log in
-    // =====================================================
-   const EMAILJS_PUBLIC_KEY  = 'AbCdEfGhIjKlMn';
-const EMAILJS_SERVICE_ID  = 'service_xxxxxxx';
-const EMAILJS_TEMPLATE_ID = 'template_xxxxxxx';
-    // =====================================================
+    <section>
+        <h2 class="section-title">Achievements</h2>
 
-    emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+        <div class="info-box">
+            <ul>
+                <li>Developed responsive websites using HTML, CSS and Bootstrap.</li>
+                <li>Worked on academic projects related to databases and web development.</li>
+                <li>Completed research work on encryption and decryption concepts.</li>
+                <li>Participated in technical workshops and seminars.</li>
+            </ul>
+        </div>
+    </section>
 
-    document.getElementById('contactForm').addEventListener('submit', function (e) {
-      e.preventDefault();
+    <section>
+        <h2 class="section-title">Hobbies & Interests</h2>
 
-      const btn      = document.getElementById('sendBtn');
-      const btnText  = document.getElementById('btnText');
-      const btnArrow = document.getElementById('btnArrow');
-      const spinner  = document.getElementById('btnSpinner');
-      const status   = document.getElementById('formStatus');
+        <div class="info-box">
+            <ul>
+                <li>Web Development</li>
+                <li>Programming</li>
+                <li>Learning New Technologies</li>
+                <li>Problem Solving</li>
+                <li>Reading Technical Articles</li>
+                <li>Listening to Music</li>
+            </ul>
+        </div>
+    </section>
 
-      const name    = document.getElementById('from_name').value.trim();
-      const email   = document.getElementById('from_email').value.trim();
-      const message = document.getElementById('message').value.trim();
+    <section>
+        <h2 class="section-title">Career Goal</h2>
 
-      btn.disabled           = true;
-      btnText.style.display  = 'none';
-      btnArrow.style.display = 'none';
-      spinner.style.display  = 'inline';
-      status.style.display   = 'none';
+        <div class="info-box">
+            <p>
+                My ambition is to become a skilled software developer and build
+                innovative applications that solve real-world problems. I am
+                continuously improving my technical knowledge and practical skills
+                to achieve my professional goals.
+            </p>
+        </div>
+    </section>
 
-      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
-        from_name:  name,
-        from_email: email,
-        message:    message
-      })
-      .then(() => {
-        status.textContent   = '✓ Message sent! I\'ll get back to you soon.';
-        status.style.color   = 'var(--accent)';
-        status.style.display = 'block';
-        document.getElementById('contactForm').reset();
-      })
-      .catch((err) => {
-        console.error('EmailJS error:', err);
-        status.textContent   = '✗ Error: ' + (err.text || err.message || JSON.stringify(err));
-        status.style.color   = 'var(--accent2)';
-        status.style.display = 'block';
-      })
-      .finally(() => {
-        btn.disabled           = false;
-        btnText.style.display  = 'inline';
-        btnArrow.style.display = 'inline';
-        spinner.style.display  = 'none';
-      });
-    });
+    <section>
+        <h2 class="section-title">Contact Information</h2>
 
-    // Custom cursor
-    const cursor = document.getElementById('cursor');
-    const ring   = document.getElementById('cursorRing');
-    let mx = 0, my = 0, rx = 0, ry = 0;
+        <div class="info-box text-center">
+            <p>Email: dhanshettyprutvika@gmail.com</p>
+            <p>Phone: +91 80888 XXXXX</p>
+            <p>Location: Karnataka, India</p>
 
-    document.addEventListener('mousemove', e => {
-      mx = e.clientX; my = e.clientY;
-      cursor.style.left = mx + 'px';
-      cursor.style.top  = my + 'px';
-    });
+            <button class="btn-custom">
+                Contact Me
+            </button>
+        </div>
+    </section>
 
-    function animateRing() {
-      rx += (mx - rx) * 0.12;
-      ry += (my - ry) * 0.12;
-      ring.style.left = rx + 'px';
-      ring.style.top  = ry + 'px';
-      requestAnimationFrame(animateRing);
-    }
-    animateRing();
-
-    document.querySelectorAll('a, button, .project-card').forEach(el => {
-      el.addEventListener('mouseenter', () => {
-        cursor.style.transform = 'translate(-50%,-50%) scale(2.5)';
-        ring.style.width = ring.style.height = '60px';
-        ring.style.opacity = '0.3';
-      });
-      el.addEventListener('mouseleave', () => {
-        cursor.style.transform = 'translate(-50%,-50%) scale(1)';
-        ring.style.width = ring.style.height = '36px';
-        ring.style.opacity = '0.6';
-      });
-    });
-
-    window.addEventListener('scroll', () => {
-      document.getElementById('navbar').classList.toggle('scrolled', scrollY > 60);
-    });
-
-    const words = ["Frontend Developer","B.Tech CSE Student","JavaScript Enthusiast","Future Software Engineer"];
-    let wi = 0, ci = 0, deleting = false;
-    const typingEl = document.getElementById('typing');
-
-    function type() {
-      const word = words[wi];
-      if (!deleting) {
-        typingEl.textContent = word.slice(0, ci++);
-        if (ci > word.length) { deleting = true; setTimeout(type, 1400); return; }
-      } else {
-        typingEl.textContent = word.slice(0, ci--);
-        if (ci < 0) { deleting = false; wi = (wi + 1) % words.length; ci = 0; }
-      }
-      setTimeout(type, deleting ? 60 : 110);
-    }
-    type();
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach((entry, i) => {
-        if (entry.isIntersecting) {
-          entry.target.style.transitionDelay = (i * 0.1) + 's';
-          entry.target.classList.add('visible');
-          entry.target.querySelectorAll('.skill-fill').forEach(bar => bar.classList.add('animated'));
-        }
-      });
-    }, { threshold: 0.15 });
-
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-  </script>
+</div>
 
 </body>
 </html>
